@@ -1,0 +1,64 @@
+\documentclass[12pt]{extarticle}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\renewcommand{\familydefault}{\sfdefault}
+% \DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
+% \DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
+% \DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
+\definecolor{lightgray}{gray}{0.95}
+\usepackage{pifont}
+\usepackage{dingbat}
+\usepackage{graphicx}
+\usepackage[letterspace=-50]{microtype}
+\usepackage[a5paper,landscape]{geometry}
+
+
+
+\usepackage{background}
+
+
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{black}
+\SetBgPosition{current page.south}
+\SetBgVshift{10pt}
+\SetBgContents{\tikz[remember picture,overlay]
+        \node at ([yshift=0pt,xshift=0pt]current page.center) {\includegraphics[width=22cm]{yellow.png}};    %% yshift and xshift for example only
+    }
+\usepackage{mathabx}
+
+\begin{document}
+\addtocounter{page}{2}
+
+\begingroup
+\centering
+\section*{Your routine}
+\endgroup
+
+\noindent When picking up your 13 cards \ldots\\
+
+\begin{enumerate}
+\item[(i)] Sort your cards into suits
+\item[(ii)] Count your High Card Points (\textbf{HCP}):
+\begin{itemize}
+\item Ace = 4 points
+\item King = 3 points
+\item Queen = 2 points
+\item Jack = 1 point
+\end{itemize}
+\item[(iii)] Decide whether you are \textbf{balanced} or unbalanced
+\end{enumerate}
+A balanced hand contains:
+\begin{itemize}
+ \item no \textbf{void}
+\item no \textbf{singleton}
+\item no more than one \textbf{doubleton}
+\end{itemize}
+\begin{flushbottom}
+ \begin{center}
+ \tiny
+ \textcopyright Andrew McIntosh
+\end{center}
+\end{flushbottom}
+
+
+\end{document}

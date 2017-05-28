@@ -1,0 +1,69 @@
+\documentclass[12pt]{extarticle}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\renewcommand{\familydefault}{\sfdefault}
+% \DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
+% \DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
+% \DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
+\definecolor{lightgray}{gray}{0.95}
+\usepackage{pifont}
+\usepackage{dingbat}
+\usepackage{graphicx}
+\usepackage[letterspace=-50]{microtype}
+\usepackage[a5paper,landscape]{geometry}
+\usepackage{fancybox}
+\usepackage{background}
+
+
+
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{black}
+\SetBgPosition{current page.south}
+\SetBgVshift{10pt}
+\SetBgContents{\tikz[remember picture,overlay]
+        \node at ([yshift=0pt,xshift=0pt]current page.center) {\includegraphics[width=24cm]{royalblue.png}};    %% yshift and xshift for example only
+    }
+\usepackage{mathabx}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+
+
+\includegraphics[scale=0.5]{acol_final_logo.jpg}\\
+\vspace{1in}
+\Huge
+\color{white}{\textbf{The Official Acol Bridge Club}}\\
+\color{white}{\textbf{Beginners Flipchart}}\\
+\vspace{0.5in}
+\normalsize
+\noindent \textcopyright Andrew McIntosh
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+
+\vspace*{\fill}
+\begin{center}
+ \Large
+ \color{white}{Acol Bridge Club\\ 
+ 86 West End Lane\\
+West Hampstead\\
+London, NW6 2LX \\
+\vspace{0.5in}
+
+T: 020 7624 7407\\
+E: info@acolbridgeclub.com\\
+\vspace{0.5in}
+Design: Laura Cecilia Porro
+}
+\vspace*{\fill}
+\end{center}
+\begin{flushbottom}
+ \begin{center}
+ \tiny
+ \color{white}{\textcopyright Andrew McIntosh}
+\end{center}
+\end{flushbottom}
+
+\end{document}
